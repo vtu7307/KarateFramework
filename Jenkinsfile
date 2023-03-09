@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'mvn test -Dtest=TesterRunner' // Run the Karate test suite
+        sh 'mvn test -Dtest=TestRunner' // Run the Karate test suite
       }
     }
   }
