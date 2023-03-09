@@ -1,0 +1,14 @@
+{
+  "Regions" : [ 
+  {
+    "region1" : "SCA",
+    "region2" : "GA"
+  }
+   ],
+   "TestCase3" : [ 
+   { 
+   "Start": 0,
+   "End": 1
+   }
+   ]
+}

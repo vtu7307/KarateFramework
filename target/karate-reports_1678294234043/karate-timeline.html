@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/SAFFWfeaturefiles\/test[1.1:19]","start":1678294181807,"end":1678294183264,"title":"src\/test\/java\/SAFFWfeaturefiles\/test[1.1:19] 22:19:41.807-22:19:43.264","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/SAFFWfeaturefiles\/test[1.2:19]","start":1678294183300,"end":1678294183590,"title":"src\/test\/java\/SAFFWfeaturefiles\/test[1.2:19] 22:19:43.300-22:19:43.590","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/SAFFWfeaturefiles\/test[1.3:19]","start":1678294183605,"end":1678294183925,"title":"src\/test\/java\/SAFFWfeaturefiles\/test[1.3:19] 22:19:43.605-22:19:43.925","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

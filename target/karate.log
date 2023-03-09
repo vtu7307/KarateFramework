@@ -1,0 +1,1826 @@
+23:03:36.793 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:03:36.804 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1678296816803
+23:03:36.830 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+23:03:39.853 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:39.877 [pool-2-thread-1] INFO  com.intuit.karate - [print] GA 
+23:03:40.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:40.309 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+23:03:40.334 [pool-1-thread-3] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+23:03:40.339 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+23:03:40.385 [pool-1-thread-1] WARN  com.intuit.karate - attach - immutable map: datasource[1]
+23:03:40.388 [pool-1-thread-1] WARN  com.intuit.karate - attach - immutable map: datasource[2]
+23:03:40.968 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=3.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:03:40.968 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=2.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:03:40.968 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=1.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:03:41.746 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 774
+1 < 200
+1 < Date: Wed, 08 Mar 2023 17:33:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3165
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=A1bYxdG%2FfL3w7eRvdDYYsMemHJx7QysJO0M8bXgJEbHN0aF4kYpCxenLnHzeHB9xbOkcEc6FT9d2JxWC3EYQFMSP6Ob24UIIdeFxuaXdIoEn8rIqtG2U4kkBeA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a4cd31f3fbb1bd9-BOM
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+23:03:41.746 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 774
+1 < 200
+1 < Date: Wed, 08 Mar 2023 17:33:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3164
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YyvYEQdoJPmE%2BcrZUQ2UHmFoEIoT5HCMI6ucwUywOTl%2B5G4dzAGDg5bGJUVbipC5xG1qRSQSyTItSPeykAbW6q6H0SYu9FPRJBffZ8FVCOdJq03NRD4Enuss3A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a4cd31f3b26f390-BOM
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+23:03:41.754 [pool-1-thread-3] WARN  com.intuit.karate - attach - immutable map: .__row
+23:03:41.755 [pool-1-thread-3] WARN  com.intuit.karate - attach - immutable map: .result[0]
+23:03:41.759 [pool-1-thread-3] WARN  com.intuit.karate - attach - immutable map: .result[1]
+23:03:41.767 [pool-1-thread-3] WARN  com.intuit.karate - attach - immutable map: .result[2]
+23:03:41.795 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+23:03:41.814 [pool-1-thread-3] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+23:03:41.857 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:41.863 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:41.866 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:41.872 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:41.895 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:41.900 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:41.907 [pool-1-thread-1] INFO  com.intuit.karate - [print] GA 
+23:03:41.911 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:41.917 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:41.932 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:41.938 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:41.942 [pool-1-thread-3] INFO  com.intuit.karate - [print] GA 
+23:03:41.944 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:41.950 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:41.958 [pool-1-thread-3] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:41.966 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:41.973 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 3,
+    "email": "emma.wong@reqres.in",
+    "first_name": "Emma",
+    "last_name": "Wong",
+    "avatar": "https://reqres.in/img/faces/3-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:41.982 [pool-1-thread-1] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:41.986 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:42.007 [pool-1-thread-3] INFO  com.intuit.karate - [print] 3 
+23:03:42.009 [pool-1-thread-3] INFO  com.intuit.karate - [print] 3.0 
+23:03:41.999 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 1,
+    "email": "george.bluth@reqres.in",
+    "first_name": "George",
+    "last_name": "Bluth",
+    "avatar": "https://reqres.in/img/faces/1-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:42.018 [pool-1-thread-1] INFO  com.intuit.karate - [print] 1 
+23:03:42.023 [pool-1-thread-1] INFO  com.intuit.karate - [print] 1.0 
+23:03:42.050 [pool-1-thread-1] WARN  com.intuit.karate - attach - immutable map: .__row
+23:03:42.069 [pool-1-thread-3] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+23:03:42.089 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:42.092 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:42.108 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:42.111 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:42.115 [pool-1-thread-3] INFO  com.intuit.karate - [print] GA 
+23:03:42.118 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:42.121 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:42.125 [pool-1-thread-3] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:42.129 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:42.132 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 3,
+    "email": "emma.wong@reqres.in",
+    "first_name": "Emma",
+    "last_name": "Wong",
+    "avatar": "https://reqres.in/img/faces/3-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:42.137 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+23:03:42.137 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+23:03:42.161 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:42.173 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1203
+1 < 200
+1 < Date: Wed, 08 Mar 2023 17:33:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: MISS
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ok5oMtKaWr4hNecW2AVnlUJIUBl0BoOGrR8puifqhtE%2FO9xIuZKSI39UBuOEkO3udstUjl9KGEoGqxX1aeqtrgxJgTJ6th88mBfeuBCE7EzetGDgmoOIDKgR5w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a4cd31f3f7b4ada-HYD
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+23:03:42.166 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:42.190 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+23:03:42.208 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:42.213 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:42.233 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:42.236 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:42.242 [pool-1-thread-2] INFO  com.intuit.karate - [print] GA 
+23:03:42.247 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:42.253 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:42.264 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:42.268 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:42.271 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:42.275 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:42.286 [pool-1-thread-1] INFO  com.intuit.karate - [print] GA 
+23:03:42.291 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:42.308 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:42.313 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:42.313 [pool-1-thread-2] INFO  com.intuit.karate - [print] 2 
+23:03:42.316 [pool-1-thread-1] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:42.323 [pool-1-thread-2] INFO  com.intuit.karate - [print] 2.0 
+23:03:42.327 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:42.336 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 1,
+    "email": "george.bluth@reqres.in",
+    "first_name": "George",
+    "last_name": "Bluth",
+    "avatar": "https://reqres.in/img/faces/1-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:42.338 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+23:03:42.354 [pool-1-thread-2] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+23:03:42.374 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+23:03:42.377 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')
+23:03:42.386 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+23:03:42.390 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+23:03:42.393 [pool-1-thread-2] INFO  com.intuit.karate - [print] GA 
+23:03:42.397 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+23:03:42.399 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+23:03:42.402 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+23:03:42.407 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+23:03:42.414 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+23:03:42.415 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+23:03:45.196 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:SAFFWfeaturefiles/test.feature
+10:50:00.114 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:50:00.137 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1678339200136
+10:50:04.048 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:04.074 [main] INFO  com.intuit.karate - [print] GA 
+10:50:04.204 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:04.292 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+10:50:05.140 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=1.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:50:06.231 [main] DEBUG com.intuit.karate - response time in milliseconds: 1085
+1 < 200
+1 < Date: Thu, 09 Mar 2023 05:20:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=F1mOiaRf54FoxO8e6v9wijm%2BUDfzoFdLvCxLLUmCbMKBgF1vGqZyc3MRBfrda1YxC7fgKw4lnuvOWA86FubiWR4fD%2FIJgD%2FiCqavbJCTnV%2F7wOylvdK9jn1%2BEw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a50dde62c89f3a1-BOM
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+10:50:06.257 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+10:50:06.319 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:06.324 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:06.347 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:06.354 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:06.366 [main] INFO  com.intuit.karate - [print] GA 
+10:50:06.367 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:06.384 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:06.397 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:06.405 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:06.412 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 1,
+    "email": "george.bluth@reqres.in",
+    "first_name": "George",
+    "last_name": "Bluth",
+    "avatar": "https://reqres.in/img/faces/1-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:06.459 [main] INFO  com.intuit.karate - [print] 1 
+10:50:06.462 [main] INFO  com.intuit.karate - [print] 1.0 
+10:50:06.530 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+10:50:06.554 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:06.558 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:06.581 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:06.596 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:06.605 [main] INFO  com.intuit.karate - [print] GA 
+10:50:06.617 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:06.623 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:06.629 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:06.637 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:06.647 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 1,
+    "email": "george.bluth@reqres.in",
+    "first_name": "George",
+    "last_name": "Bluth",
+    "avatar": "https://reqres.in/img/faces/1-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:06.667 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+10:50:06.760 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+10:50:06.809 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=2.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:50:07.423 [main] DEBUG com.intuit.karate - response time in milliseconds: 605
+1 < 200
+1 < Date: Thu, 09 Mar 2023 05:20:07 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8OHC4N%2FiCgMBE3ozr7kPcKtGUB95RSRfGHemkIW%2BrQEfRhVAQKuh4r6fW%2FNiVYJTNyYnS8tzcGok72jSeTrIxTJ4yzvDNoA02SQ61DUOkU5QE0iO6uHC8lo1Ig%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a50ddedddf4f33f-BOM
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+10:50:07.438 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+10:50:07.467 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:07.475 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:07.498 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:07.507 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:07.516 [main] INFO  com.intuit.karate - [print] GA 
+10:50:07.524 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:07.529 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:07.542 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:07.548 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:07.565 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:07.574 [main] INFO  com.intuit.karate - [print] 2 
+10:50:07.578 [main] INFO  com.intuit.karate - [print] 2.0 
+10:50:07.611 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+10:50:07.649 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:07.658 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:07.668 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:07.685 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:07.700 [main] INFO  com.intuit.karate - [print] GA 
+10:50:07.715 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:07.718 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:07.728 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:07.730 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:07.738 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:07.746 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+10:50:07.808 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/utility.feature - call by tag at line 4: Validatedetails
+10:50:07.874 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?id=3.0&page=1.0
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:50:08.458 [main] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 200
+1 < Date: Thu, 09 Mar 2023 05:20:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4z2s3k8NhHGCNbZKQIjqMI5gWzLvBKC7SX3l26snyrHkIEiB8MN03X%2BApYb9O3XOON2KNpQyNzEAyTLO%2B%2FR6T9HKP4NAM76ey4rDX0jt%2BIqwLkucnr508uqjBg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a50ddf43ccff3bd-BOM
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+10:50:08.469 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 24: ValidateidandFname
+10:50:08.480 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:08.485 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:08.501 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:08.502 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:08.503 [main] INFO  com.intuit.karate - [print] GA 
+10:50:08.520 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:08.524 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:08.536 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:08.545 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:08.553 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 3,
+    "email": "emma.wong@reqres.in",
+    "first_name": "Emma",
+    "last_name": "Wong",
+    "avatar": "https://reqres.in/img/faces/3-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:08.558 [main] INFO  com.intuit.karate - [print] 3 
+10:50:08.563 [main] INFO  com.intuit.karate - [print] 3.0 
+10:50:08.591 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:SAFFWfeaturefiles/test.feature - call by tag at line 35: ValidateLNameandEmail
+10:50:08.625 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'javaUtilClass' with new value: Java.type('com.example.JavaUtilClass')
+10:50:08.629 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'Resp' with new value: new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/'+env+'.xls')
+10:50:08.670 [main] INFO  com.intuit.karate - [print] {
+  "SCA": [
+    {
+      "TestaseName": "Validate Record Created1",
+      "method": "post",
+      "TestCaseId": "TC001",
+      "body": "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created2",
+      "method": "post",
+      "TestCaseId": "TC002",
+      "body": "{ \"name\": \"Captain\", \"job\": \"Army soldier\" }",
+      "url": "https://reqres.in/api/users"
+    },
+    {
+      "TestaseName": "Validate Record Created3",
+      "method": "post",
+      "TestCaseId": "TC003",
+      "body": "{ \"name\": \"Ram\", \"job\": \"Doctor\" }",
+      "url": "https://reqres.in/api/users"
+    }
+  ],
+  "GA": [
+    {
+      "Emailid": "george.bluth@reqres.in",
+      "TestaseName": "Validate FirstName",
+      "Listpage": "1.0",
+      "FirstName": "George",
+      "TestCaseId": "TC001",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "1.0",
+      "LastName": "Bluth",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "janet.weaver@reqres.in",
+      "TestaseName": "Validate LastName",
+      "Listpage": "1.0",
+      "FirstName": "Janet",
+      "TestCaseId": "TC002",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "2.0",
+      "LastName": "Weaver",
+      "Methods": "GET"
+    },
+    {
+      "Emailid": "emma.wong@reqres.in",
+      "TestaseName": "Validate Email",
+      "Listpage": "1.0",
+      "FirstName": "Emma",
+      "TestCaseId": "TC003",
+      "Baseurl": "https://reqres.in/api/users",
+      "Recordid": "3.0",
+      "LastName": "Wong",
+      "Methods": "GET"
+    }
+  ]
+}
+ 
+10:50:08.686 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'region' with new value: paramjson.Regions[0].region2
+10:50:08.689 [main] INFO  com.intuit.karate - [print] GA 
+10:50:08.695 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: karate.jsonPath(Resp, "$." + region + "")
+10:50:08.697 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'datasource' with new value: result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)
+10:50:08.703 [main] INFO  com.intuit.karate - [print] [
+  {
+    "Emailid": "george.bluth@reqres.in",
+    "TestaseName": "Validate FirstName",
+    "Listpage": "1.0",
+    "FirstName": "George",
+    "TestCaseId": "TC001",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "1.0",
+    "LastName": "Bluth",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "janet.weaver@reqres.in",
+    "TestaseName": "Validate LastName",
+    "Listpage": "1.0",
+    "FirstName": "Janet",
+    "TestCaseId": "TC002",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "2.0",
+    "LastName": "Weaver",
+    "Methods": "GET"
+  },
+  {
+    "Emailid": "emma.wong@reqres.in",
+    "TestaseName": "Validate Email",
+    "Listpage": "1.0",
+    "FirstName": "Emma",
+    "TestCaseId": "TC003",
+    "Baseurl": "https://reqres.in/api/users",
+    "Recordid": "3.0",
+    "LastName": "Wong",
+    "Methods": "GET"
+  }
+]
+ 
+10:50:08.712 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'toNumber' with new value: function(x){ return parseInt(x) }
+10:50:08.716 [main] INFO  com.intuit.karate - [print] {
+  "data": {
+    "id": 3,
+    "email": "emma.wong@reqres.in",
+    "first_name": "Emma",
+    "last_name": "Wong",
+    "avatar": "https://reqres.in/img/faces/3-image.jpg"
+  },
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+10:50:08.723 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'RecordResp' with new value: response
+10:50:12.182 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/SAFFWfeaturefiles/test.feature

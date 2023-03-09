@@ -1,0 +1,5957 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: SAFFWfeaturefiles/test.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>08 Mar 2023, 23:03</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">SAFFWfeaturefiles/test.feature</td>
+          <td      class="passed"    >144</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">144</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="14461577800">14.461</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+
+</div>
+
+        <div class="description indention">Validate User Details</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.026</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.827</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>23:03:39.860 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>23:03:39.877 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.062</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>23:03:40.029 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">3.780</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate FirstName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/utility.feature@Validatedetails')</span>
+
+  <span class="lead-duration duration">1.478</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/utility.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url Baseurl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>23:03:40.387 attach - immutable map: datasource[1]
+23:03:40.388 attach - immutable map: datasource[2]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param id = Recordid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param page = Listpage</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Methods</span>
+
+  <span class="lead-duration duration">1.352</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>23:03:40.969 request:
+1 &gt; GET https://reqres.in/api/users?id=1.0&amp;page=1.0
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:03:41.746 response time in milliseconds: 774
+1 &lt; 200
+1 &lt; Date: Wed, 08 Mar 2023 17:33:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;118-P3iKcVpIgCj9HqYeOOrGLX8qJVc&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 3165
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=A1bYxdG%2FfL3w7eRvdDYYsMemHJx7QysJO0M8bXgJEbHN0aF4kYpCxenLnHzeHB9xbOkcEc6FT9d2JxWC3EYQFMSP6Ob24UIIdeFxuaXdIoEn8rIqtG2U4kkBeA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7a4cd31f3fbb1bd9-BOM
+{&quot;data&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;george.bluth@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Bluth&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/1-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateidandFname')</span>
+
+  <span class="lead-duration duration">0.309</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>23:03:42.052 attach - immutable map: .__row
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>23:03:41.900 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>23:03:41.910 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>23:03:41.986 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>23:03:42.010 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 1,
+    &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;George&quot;,
+    &quot;last_name&quot;: &quot;Bluth&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Resp</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print RecordResp.data.id.toString()</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>23:03:42.020 [print] 1 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Actual</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Recordid</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>23:03:42.024 [print] 1.0 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match toNumber(RecordResp.data.id) == toNumber(Recordid)</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.first_name == FirstName</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateLNameandEmail')</span>
+
+  <span class="lead-duration duration">0.277</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>23:03:42.272 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>23:03:42.290 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.022</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>23:03:42.325 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>23:03:42.338 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 1,
+    &quot;email&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;George&quot;,
+    &quot;last_name&quot;: &quot;Bluth&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/1-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.last_name == LastName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.email == Emailid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.026</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.827</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>23:03:39.860 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>23:03:39.877 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.062</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>23:03:40.029 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">4.048</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/utility.feature@Validatedetails')</span>
+
+  <span class="lead-duration duration">1.879</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/utility.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url Baseurl</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param id = Recordid</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param page = Listpage</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Methods</span>
+
+  <span class="lead-duration duration">1.750</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>23:03:40.969 request:
+1 &gt; GET https://reqres.in/api/users?id=2.0&amp;page=1.0
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:03:42.173 response time in milliseconds: 1203
+1 &lt; 200
+1 &lt; Date: Wed, 08 Mar 2023 17:33:42 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ok5oMtKaWr4hNecW2AVnlUJIUBl0BoOGrR8puifqhtE%2FO9xIuZKSI39UBuOEkO3udstUjl9KGEoGqxX1aeqtrgxJgTJ6th88mBfeuBCE7EzetGDgmoOIDKgR5w%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7a4cd31f3f7b4ada-HYD
+{&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateidandFname')</span>
+
+  <span class="lead-duration duration">0.165</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>23:03:42.235 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>23:03:42.243 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>23:03:42.268 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>23:03:42.309 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 2,
+    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Janet&quot;,
+    &quot;last_name&quot;: &quot;Weaver&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Resp</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print RecordResp.data.id.toString()</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>23:03:42.318 [print] 2 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Actual</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Recordid</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>23:03:42.323 [print] 2.0 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match toNumber(RecordResp.data.id) == toNumber(Recordid)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.first_name == FirstName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateLNameandEmail')</span>
+
+  <span class="lead-duration duration">0.075</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>23:03:42.388 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>23:03:42.396 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>23:03:42.407 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>23:03:42.415 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 2,
+    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Janet&quot;,
+    &quot;last_name&quot;: &quot;Weaver&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.last_name == LastName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.email == Emailid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.026</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.827</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>23:03:39.860 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>23:03:39.877 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.062</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>23:03:40.029 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">3.551</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Email</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-44" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/utility.feature@Validatedetails')</span>
+
+  <span class="lead-duration duration">1.460</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>23:03:41.754 attach - immutable map: .__row
+23:03:41.756 attach - immutable map: .result[0]
+23:03:41.760 attach - immutable map: .result[1]
+23:03:41.767 attach - immutable map: .result[2]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/utility.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url Baseurl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param id = Recordid</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param page = Listpage</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Methods</span>
+
+  <span class="lead-duration duration">1.383</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>23:03:40.969 request:
+1 &gt; GET https://reqres.in/api/users?id=3.0&amp;page=1.0
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:03:41.747 response time in milliseconds: 774
+1 &lt; 200
+1 &lt; Date: Wed, 08 Mar 2023 17:33:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;112-EeInfgHWtnxhYRnwgZUB667e024&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 3164
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=YyvYEQdoJPmE%2BcrZUQ2UHmFoEIoT5HCMI6ucwUywOTl%2B5G4dzAGDg5bGJUVbipC5xG1qRSQSyTItSPeykAbW6q6H0SYu9FPRJBffZ8FVCOdJq03NRD4Enuss3A%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7a4cd31f3b26f390-BOM
+{&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;emma.wong@reqres.in&quot;,&quot;first_name&quot;:&quot;Emma&quot;,&quot;last_name&quot;:&quot;Wong&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/3-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateidandFname')</span>
+
+  <span class="lead-duration duration">0.283</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>23:03:41.937 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>23:03:41.944 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>23:03:41.965 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>23:03:41.974 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 3,
+    &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Emma&quot;,
+    &quot;last_name&quot;: &quot;Wong&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Resp</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print RecordResp.data.id.toString()</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>23:03:42.007 [print] 3 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Actual</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Recordid</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>23:03:42.010 [print] 3.0 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match toNumber(RecordResp.data.id) == toNumber(Recordid)</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.first_name == FirstName</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read('classpath:SAFFWfeaturefiles/test.feature@ValidateLNameandEmail')</span>
+
+  <span class="lead-duration duration">0.150</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">SAFFWfeaturefiles/test.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def javaUtilClass = Java.type('com.example.JavaUtilClass')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json Resp = new javaUtilClass().readExcelFileAsJsonObject_RowWise('src/test/java/testData/qa.xls')</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Resp</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>23:03:42.110 [print] {
+  &quot;SCA&quot;: [
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created1&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;John Doe\&quot;, \&quot;job\&quot;: \&quot;Software Engineer\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created2&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Captain\&quot;, \&quot;job\&quot;: \&quot;Army soldier\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    },
+    {
+      &quot;TestaseName&quot;: &quot;Validate Record Created3&quot;,
+      &quot;method&quot;: &quot;post&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;body&quot;: &quot;{ \&quot;name\&quot;: \&quot;Ram\&quot;, \&quot;job\&quot;: \&quot;Doctor\&quot; }&quot;,
+      &quot;url&quot;: &quot;https://reqres.in/api/users&quot;
+    }
+  ],
+  &quot;GA&quot;: [
+    {
+      &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;George&quot;,
+      &quot;TestCaseId&quot;: &quot;TC001&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;1.0&quot;,
+      &quot;LastName&quot;: &quot;Bluth&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Janet&quot;,
+      &quot;TestCaseId&quot;: &quot;TC002&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;2.0&quot;,
+      &quot;LastName&quot;: &quot;Weaver&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+      &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+      &quot;Listpage&quot;: &quot;1.0&quot;,
+      &quot;FirstName&quot;: &quot;Emma&quot;,
+      &quot;TestCaseId&quot;: &quot;TC003&quot;,
+      &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+      &quot;Recordid&quot;: &quot;3.0&quot;,
+      &quot;LastName&quot;: &quot;Wong&quot;,
+      &quot;Methods&quot;: &quot;GET&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def region = paramjson.Regions[0].region2</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print region</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>23:03:42.118 [print] GA 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">json result = karate.jsonPath(Resp, &quot;$.&quot; + region + &quot;&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json datasource = result.slice(paramjson.TestCase3[0].start , paramjson.TestCase3[0].end)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print datasource</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>23:03:42.128 [print] [
+  {
+    &quot;Emailid&quot;: &quot;george.bluth@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate FirstName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;George&quot;,
+    &quot;TestCaseId&quot;: &quot;TC001&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;1.0&quot;,
+    &quot;LastName&quot;: &quot;Bluth&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate LastName&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Janet&quot;,
+    &quot;TestCaseId&quot;: &quot;TC002&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;2.0&quot;,
+    &quot;LastName&quot;: &quot;Weaver&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  },
+  {
+    &quot;Emailid&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;TestaseName&quot;: &quot;Validate Email&quot;,
+    &quot;Listpage&quot;: &quot;1.0&quot;,
+    &quot;FirstName&quot;: &quot;Emma&quot;,
+    &quot;TestCaseId&quot;: &quot;TC003&quot;,
+    &quot;Baseurl&quot;: &quot;https://reqres.in/api/users&quot;,
+    &quot;Recordid&quot;: &quot;3.0&quot;,
+    &quot;LastName&quot;: &quot;Wong&quot;,
+    &quot;Methods&quot;: &quot;GET&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def toNumber = function(x){ return parseInt(x) }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>23:03:42.136 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 3,
+    &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Emma&quot;,
+    &quot;last_name&quot;: &quot;Wong&quot;,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RecordResp = response</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.last_name == LastName</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match RecordResp.data.email == Emailid</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
